@@ -1,7 +1,7 @@
 {
   "name": "@runrig/eslint-config-runrig",
   "version": "1.0.0",
-  "description": "A fork of Airbnb style guide with a few overrides and extra rules.",
+  "description": "Convenient FlatCompat wrapper of AirBnb styles plus a few extra rules.",
   "main": "eslint.config.js",
   "type": "module",
   "scripts": {

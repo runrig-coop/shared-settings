@@ -1,7 +1,7 @@
 {
   "name": "shared-settings",
   "version": "3.0.0",
-  "description": "A mostly reasonable approach to JavaScript. [FORK OF AIRBNB]",
+  "description": "A home for shared settings, configurations, and styles across projects",
   "scripts": {
     "preinstall": "npm run install:eslint",
     "install:eslint": "npm i -w @runrig/eslint-config-runrig",
