@@ -1,7 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
-import runrigBase from './rules/base.js';
+// import importPlugin from 'eslint-plugin-import';
+import runrigBase from './base.js';
 
 /**
  * Mimic ESLintRC-style extends for AirBNB based on eslint@^8.0.0.
@@ -14,6 +15,7 @@ const compat = new FlatCompat({
 const airbnbBase = compat.extends('eslint-config-airbnb-base');
 
 export default [
+  // importPlugin.flatConfigs.recommended,
   ...airbnbBase,
   runrigBase,
 

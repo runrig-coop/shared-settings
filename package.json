@@ -1,16 +1,28 @@
 {
-  "name": "shared-settings",
-  "version": "3.0.0",
-  "description": "A home for shared settings, configurations, and styles across projects",
+  "name": "@runrig/eslint-config-runrig",
+  "version": "1.0.0",
+  "description": "Convenient FlatCompat wrapper of AirBnb styles plus a few extra rules.",
+  "main": "src/eslint.config.js",
+  "type": "module",
   "scripts": {
-    "preinstall": "npm run install:eslint",
-    "install:eslint": "npm i -w @runrig/eslint-config-runrig",
-    "test": "npm run --silent test:eslint",
-    "test:eslint": "npm test -w @runrig/eslint-config-runrig"
+    "test": "eslint -c src/eslint.config.js ."
   },
-  "workspaces": [
-    "packages/eslint-config-runrig"
-  ],
+  "dependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "overrides": {
+    "eslint-config-airbnb-base": {
+      "eslint": "$eslint"
+    }
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/runrig-coop/shared-settings.git"
