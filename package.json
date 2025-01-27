@@ -1,6 +1,6 @@
 {
   "name": "@runrig/eslint-config-runrig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convenient FlatCompat wrapper of AirBnb styles plus a few extra rules.",
   "main": "src/eslint.config.js",
   "type": "module",
