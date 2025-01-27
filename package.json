@@ -1,0 +1,29 @@
+{
+  "name": "shared-settings",
+  "version": "3.0.0",
+  "description": "A mostly reasonable approach to JavaScript. [FORK OF AIRBNB]",
+  "scripts": {
+    "preinstall": "npm run install:eslint",
+    "install:eslint": "npm i -w @runrig/eslint-config-runrig",
+    "test": "npm run --silent test:eslint",
+    "test:eslint": "npm test -w @runrig/eslint-config-runrig"
+  },
+  "workspaces": [
+    "packages/eslint-config-runrig"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runrig-coop/shared-settings.git"
+  },
+  "keywords": [
+    "style guide",
+    "lint",
+    "typescript"
+  ],
+  "author": "Jamie Gaehring <jamie@runrig.org> (https://runrig.org)",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/runrig-coop/shared-settings/issues"
+  },
+  "homepage": "https://github.com/runrig-coop/shared-settings"
+}
